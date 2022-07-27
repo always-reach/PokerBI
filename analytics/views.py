@@ -1,8 +1,8 @@
-from django.http import HttpResponse
+
 from django.shortcuts import render
+from django.views.generic import TemplateView
 
 
-# Create your views here.
+class TopTemplateView(TemplateView):
+    template_name = "analytics/top.html"
 
-def index(request):
-    return HttpResponse("Hello World! This is Test Page")
